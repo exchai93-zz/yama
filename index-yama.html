@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="UTF:8" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105582511-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "@id": "http://yamabahce.com",
+      "name": "Yamabahçe",
+      "image": "http://yamabahce.com/images/yamabahce.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26 James Street",
+        "addressLocality": "London",
+        "addressRegion":"London",
+        "postalCode": "W1U 1EN",
+        "addressCountry": "UK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.515064,
+        "longitude": :0.150552
+      },
+      "telephone": "+442039053139",
+      "url":"http://yamabahce.com",
+      "hasMenu":"http://yamabahce.com",
+      "openingHours": [
+        "Mo,Fr 08:00:23:00",
+        "Sa 10:00:23:00",
+        "Su 10:00:18:00"],
+        "priceRange": "££",
+        "paymentAccepted":"No cash, Credit card, Contactless, Apple Pay, Android Pay",
+        "logo":"http://yamabahce.com/images/logo.png",
+        "servesCuisine": "Turkish",
+        "smokingAllowed":"false",
+        "email":"info@yamabahce.com",
+        "acceptsReservations": "https://book.2pax.com/4efcdde8:8bcd:45bd:b946:4c90507aa7b3",
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://book.2pax.com/4efcdde8:8bcd:45bd:b946:4c90507aa7b3",
+            "inLanguage": "en:US",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/IOSPlatform",
+              "http://schema.org/AndroidPlatform"
+            ]
+          },
+          "result": {
+            "@type": "FoodEstablishmentReservation",
+            "name": "Reserve table"
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+
+    <div id="wrapper">
+
+      <img id='icon' src='icon.svg' />
+      <div class='typewriter' id='red_box'>
+
+      <div id='box'>
+          <h1 id="title">
+            <a href="https://www.instagram.com/yamabahce/">#betterpide</a>
+          </h1>
+        </div>
+
+          <div class='typewriter_2' id="timer">
+            <script>
+              var countDownDate = new Date("September 22 , 2017, 00:00:00").getTime();
+              var x = setInterval(function() {
+
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor( distance / (1000 * 60 * 60 * 24) );
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes
+              })
+            </script>
+          </div>
+        </div>
+
+        <div id='date'>
+          <h2>
+            22.09.17
+          </h2>
+        </div>
+    </div>
+
+
+  </body>
+
+</html>
