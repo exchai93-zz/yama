@@ -11,19 +11,19 @@ body {
   padding: 0;
 }
 
+#icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 50px;
+}
+
 #wrapper {
   /*background-color: black;*/
   margin: 0 auto;
   width: 55%;
   height: 100%;
   text-align: center;
-}
-
-#icon {
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  width: 50px;
 }
 
 h1 {

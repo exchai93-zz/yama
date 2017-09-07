@@ -71,43 +71,27 @@
 
   <body>
 
-
     <div id="wrapper">
       <img id='icon' src='icon.svg' />
 
       <div id='box'>
-        <div id='hidden' class='hidden'><p>This is hidden</p></div>
-          <div id='not-hidden'></div>
-          <h1 id="title">
-
+        <div id='hidden-title' class='hidden'>
+          <h1>
             <a href="https://www.instagram.com/yamabahcemenu/">#betterpide</a>
-
           </h1>
+        </div>
+        <div id='unhidden-title'></div>
       </div>
 
-          <div class='typewriter_2' id="timer">
-            <!-- <script>
-              var countDownDate = new Date("September 22 , 2017, 00:00:00").getTime();
-              var x = setInterval(function() {
+      <div id="hidden-timer" class='hidden'>
+        <p>12:12:12</p>
+      </div>
+      <div id='unhidden-timer'></div>
 
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-
-                var days = Math.floor( distance / (1000 * 60 * 60 * 24) );
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-                document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes
-              })
-            </script> -->
-          </div>
-        </div>
-
-        <div id='date'>
-          <h2>
-            22.09.17
-          </h2>
-        </div>
+      <div id='hidden-date' class='hidden'>
+        <h2>22.09.17</h2>
+      </div>
+      <div id='unhidden-date'></div>
 
     </div>
 
