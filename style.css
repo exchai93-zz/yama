@@ -71,6 +71,10 @@ h2 {
   color: #f8b700;
 }
 
+.hidden {
+  display: none;
+}
+
 a:link {
   color: white;
   background-color; transparent;
