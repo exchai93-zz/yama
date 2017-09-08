@@ -1,4 +1,3 @@
-console.log("Hello World!!");
 import Typed from 'typed.js';
 
 function typeOutTitle() {
@@ -11,7 +10,10 @@ function typeOutTitle() {
 function typeOutTimer() {
   return new Typed("#unhidden-timer", {
     stringsElement: '#hidden-timer',
-    typeSpeed: 150
+    typeSpeed: 150,
+    onComplete: function(){
+      console.log("hello");
+    }
   });
 }
 
@@ -23,6 +25,7 @@ function typeOutDate() {
 }
 
 setTimeout(typeOutTitle, 2000);
+timer();
 setTimeout(typeOutTimer, 6000);
 setTimeout(typeOutDate, 10000);
 
@@ -38,6 +41,6 @@ function timer() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("timer").innerHTML = days + ":" + hours + ":" + minutes;
+    document.getElementById("time").innerHTML = days + ":" + hours + ":" + minutes;
   });
 }
