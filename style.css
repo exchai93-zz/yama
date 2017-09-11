@@ -9,11 +9,6 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  /*background-image:url('images/pide_img');*/
-  /*background-size: 800px;*/
-  /*background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }
 
 video {
@@ -49,25 +44,6 @@ video {
   text-align: left;
 }
 
-#timer-wrapper {
-  background-color: black;
-  margin: 0 auto;
-  display: inline-block;
-  width: 100%;
-}
-
-#hidden-timer-wrapper {
-  position: absolute;
-  margin-left: 6.5%;
-  display: inline-block;
-  z-index: -1;
-  bottom: 37%;
-}
-
-.invisible-wrapper {
-  visibility: hidden;
-}
-
 #icon {
   position: absolute;
   right: 30px;
@@ -82,9 +58,8 @@ video {
   margin-top: 10%;
 }
 
-h2 {
-  position: relative;
-  left: -50%;
+.hidden {
+  display: none;
 }
 
 #unhidden-title {
@@ -94,6 +69,25 @@ h2 {
   font-size: 8vw;
   letter-spacing: 0px;
   overflow: hidden;
+}
+
+#timer-wrapper {
+  background-color: black;
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+}
+
+#hidden-timer-wrapper {
+  position: absolute;
+  margin-left: 8.5%;
+  display: inline-block;
+  z-index: -1;
+  bottom: 37%;
+}
+
+.invisible-wrapper {
+  visibility: hidden;
 }
 
 #unhidden-timer {
@@ -106,6 +100,11 @@ h2 {
   background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
   background-size: 1em 1em;
   color: #f8b700;
+}
+
+h2 {
+  position: relative;
+  left: -50%;
 }
 
 #unhidden-date {
@@ -125,12 +124,6 @@ h2 {
   display: none;
 }
 
-.hidden {
-  display: none;
-}
-
-
-
 a:link {
   color: white;
   background-color; transparent;
@@ -143,49 +136,75 @@ a:visited {
   text-decoration: none;
 }
 
-/*@media only screen and (max-width: 900px) {
-  #box{
-    margin-top: 30%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #box{
-    margin-top: 50%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #box{
-    margin-top: 70%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  #box{
-    margin-top: 50%;
-  }
-}*/
-
 /*Iphone 6*/
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-/*Portrait*/
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-}
+      #icon {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        width: 100px;
+      }
+      #wrapper {
+        width: 55%;
+        height: 100%;
+      }
+      #unhidden-title {
+        font-size: 10vw;
+        margin-top: 100%;
+      }
+      #hidden-timer-wrapper {
+        margin-left: 11.5%;
+      }
+      #unhidden-timer {
+        font-size: 10vw;
+        padding: 210px 0px;
+      }
+      #unhidden-date {
+        font-size: 5vw;
+        bottom: 40%;
+        left: 40%;
+      }
+    }
+    
 /* Landscape */
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    #icon {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 70px;
+    }
+    #wrapper {
+      width: 55%;
+      height: 100%;
+    }
+    #unhidden-title {
+      margin-top: 50%;
+      font-size: 7vw;
+      margin-top: 22%;
+      margin-left: 12%;
+    }
+    #hidden-timer-wrapper {
+      margin-left: 13.5%;
+      bottom: -4%;
+    }
+    #unhidden-timer {
+      font-size: 7vw;
+      padding: 210px 0px;
+    }
+    #unhidden-date {
+      font-size: 3vw;
+      bottom: 17%;
+      left: 42%;
+    }
+  }
 
 }
 
@@ -197,7 +216,6 @@ a:visited {
   and (-webkit-min-device-pixel-ratio: 3) {
 
 }
-
 /* Portrait */
 @media only screen
   and (min-device-width: 414px)
@@ -206,7 +224,6 @@ a:visited {
   and (orientation: portrait) {
 
 }
-
 /* Landscape */
 @media only screen
   and (min-device-width: 414px)
