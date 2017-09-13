@@ -75,7 +75,7 @@ video {
 
 #hidden-timer-wrapper {
   position: absolute;
-  margin-left: 8.5%;
+  margin-left: 11.5%;
   display: inline-block;
   z-index: -1;
   bottom: 33%;
@@ -87,7 +87,7 @@ video {
 
 #unhidden-timer {
   overflow: hidden;
-  font-size: 8vw;
+  font-size: 7vw;
   float: left;
   width: 100%;
     -webkit-background-clip: text;
@@ -107,7 +107,7 @@ h2 {
   text-align: center;
   position: absolute;
   bottom: 13%;
-  left: 42%;
+  left: 41%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
