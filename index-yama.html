@@ -70,41 +70,42 @@
   </head>
 
   <body>
-
+<!--
     <div id='full-video-screen'>
       <video id='yamavideo' poster='https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/1436/9/232184815/822057368.mp4?token=1504792656-0xb9ca9f3f6a38938778cf4f9276d9cc521d122857' playsinline autoplay muted loop>
         <source src='video/red_video' type="video/mp4">
       </video>
-    </div>
+    </div> -->
 
-    <div id="wrapper">
+    <div class='container'>
       <img id='icon' src='icon.svg' />
 
-      <div id='box'>
-        <div id='hidden-title' class='hidden'>
-          <h1>
-            <a href="https://www.instagram.com/yamabahcemenu/">#betterpide</a>
-          </h1>
-        </div>
-        <div id='unhidden-title'></div>
-      </div>
+        <div class='title flex-child'>
+          <div id='hidden-title'>
+            <span class='invisible'>
+              <a href="https://www.instagram.com/yamabahcemenu/">#betterpide</a>
+            </span>
 
-      <div id='timer-wrapper'>
-        <div id='hidden-timer-wrapper'>
-          <div id="hidden-timer" class='hidden invisible-wrapper'>
+            <div id='unhidden-title'>
+              #betterpide
+            </div>
+          </div>
+        </div>
+
+        <div class='timer flex-child'>
+          <div id='hidden-timer' class='invisible'>
             <p id='time'>12:12:12</p>
           </div>
 
           <div id='unhidden-timer'></div>
         </div>
-      </div>
 
-      <div id='hidden-date' class='hidden'>
-        <h2>22.09.17</h2>
-      </div>
-      <div id='unhidden-date'></div>
-
-  </div>
+        <div class='date flex-child'>
+          <div id='hidden-date'>
+            <span class='invisible'>25.09.17</span>
+          </div>
+          <div id='unhidden-date'></div>
+        </div>
 
 
   </body>

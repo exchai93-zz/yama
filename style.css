@@ -1,14 +1,10 @@
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url('fonts/HelveticaNeueBd.ttf');
-}
-
-@font-face {
   font-family: 'texbold';
   src: url('fonts/texgyreheros-bold.otf');
 }
 
 body {
+  display: flex;
   background-color: rgb(245, 0, 2);
   font-family: 'texbold';
   color: white;
@@ -16,7 +12,7 @@ body {
   padding: 0;
 }
 
-video {
+/*video {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -28,86 +24,94 @@ video {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#full-video-screen{
-  z-index: 1;
-}
+#full-video-screen {
+  z-index: 0;
+}*/
 
-#wrapper {
-  margin: 0 auto;
-  width: 44%;
-  height: 100%;
-  text-align: left;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /*flex-wrap: wrap;*/
+
+  /*-webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;*/
+
+  /*display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;*/
 }
 
 #icon {
+  display: flex;
   position: absolute;
   right: 30px;
   top: 30px;
   width: 70px;
 }
 
-#box {
-  margin: 0 auto;
-  width: 100%;
-  float: left;
-  margin-top: 10%;
+.flex-child {
+  background-color: yellow;
+  text-align: center;
 }
 
-.hidden {
-  display: none;
+.title {
+  font-size: 8vw;
+}
+
+#hidden-title {
+  background-color: blue;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.invisible {
+  /*visibility: hidden;*/
 }
 
 #unhidden-title {
-  margin-top: 18%;
-  float: left;
-  width: 100%;
-  font-size: 8vw;
-  letter-spacing: 0px;
-  overflow: hidden;
-}
-
-#timer-wrapper {
-  background-color: black;
-  margin: 0 auto;
-  display: inline-block;
-  width: 100%;
-}
-
-#hidden-timer-wrapper {
+  background-color: pink;
+  text-align: left;
   position: absolute;
-  margin-left: 9.7%;
-  display: inline-block;
-  z-index: -1;
-  bottom: 33%;
+  top: 0;
 }
 
-.invisible-wrapper {
-  visibility: hidden;
+.timer {
+  font-size: 7vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  background-size: 1em 1em;
+  color: #f8b700;
+}
+
+#timer-container {
+  background-color: black;
+  display: flex;
+  width: 100%;
+}
+
+#hidden-timer {
+  background-color: orange;
+
 }
 
 #unhidden-timer {
-  overflow: hidden;
-  font-size: 7vw;
-  float: left;
-  width: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
-  background-size: 1em 1em;
-  color: #f8b700;
-}
-
-h2 {
-  position: relative;
-  left: -50%;
-}
-
-#unhidden-date {
-  font-size: 4vw;
-  text-align: center;
+  background-color: white;
+  text-align: left;
   position: absolute;
-  bottom: 13%;
-  left: 41%;
+  top: 0;
+}
+
+.date {
+  font-size: 4vw;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(top, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
@@ -115,9 +119,7 @@ h2 {
   color: #f8b700;
 }
 
-.typed-cursor {
-  display: none;
-}
+
 
 a:link {
   color: white;
@@ -131,90 +133,4 @@ a:visited {
   text-decoration: none;
 }
 
-/*Iphone 6*/
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #icon {
-      position: absolute;
-      right: 50px;
-      top: 50px;
-      width: 100px;
-    }
-    #wrapper {
-      width: 55%;
-      height: 100%;
-    }
-    #unhidden-title {
-      font-size: 10vw;
-      margin-top: 100%;
-    }
-    #hidden-timer-wrapper {
-      margin-left: 9.5%;
-    }
-    #unhidden-timer {
-      font-size: 10vw;
-      padding: 320px 0px;
-    }
-    #unhidden-date {
-      font-size: 5vw;
-      bottom: 40%;
-      left: 39%;
-    }
-  }
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    #icon {
-      position: absolute;
-      right: 30px;
-      top: 30px;
-      width: 70px;
-    }
-    #wrapper {
-      width: 55%;
-      height: 100%;
-    }
-    #unhidden-title {
-      margin-top: 50%;
-      font-size: 7vw;
-      margin-top: 22%;
-      margin-left: 12%;
-    }
-    #hidden-timer-wrapper {
-      margin-left: 13.5%;
-      bottom: -6%;
-    }
-    #unhidden-timer {
-      font-size: 7vw;
-      padding: 210px 0px;
-    }
-    #unhidden-date {
-      font-size: 3vw;
-      bottom: 18%;
-      left: 42%;
-    }
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  #box{
-    margin-top: 30%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #box{
-    margin-top: 50%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #box{
-    margin-top: 70%;
-  }
-}
+/*Add padding for title, timer and date in %*/
